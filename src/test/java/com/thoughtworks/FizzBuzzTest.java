@@ -47,7 +47,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void when_number_is_multiple_of_3_and_5_return_FizzBuzz(){
+    public void when_number_is_multiple_of_3_and_5_return_FizzBuzz() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         Integer input = 15;
 
@@ -57,7 +57,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void when_number_is_multiple_of_3_and_7_return_FizzWhizz(){
+    public void when_number_is_multiple_of_3_and_7_return_FizzWhizz() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         Integer input = 21;
 
@@ -67,7 +67,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void when_number_is_multiple_of_5_and_7_return_BuzzWhizz(){
+    public void when_number_is_multiple_of_5_and_7_return_BuzzWhizz() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         Integer input = 35;
 
@@ -77,7 +77,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void when_number_is_multiple_of_3_and_5_and_7_return_FizzBuzzWhizz(){
+    public void when_number_is_multiple_of_3_and_5_and_7_return_FizzBuzzWhizz() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         Integer input = 105;
 
@@ -87,7 +87,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void when_number_contains_3_like_13_return_Fizz(){
+    public void when_number_contains_3_like_13_return_Fizz() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         Integer input = 13;
 
@@ -97,7 +97,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void when_number_contains_3_like_30_return_Fizz(){
+    public void when_number_contains_3_like_30_return_Fizz() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         Integer input = 30;
 
@@ -107,12 +107,22 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void when_number_contains_5_like_35_return_FizzBuzz(){
+    public void when_number_contains_5_like_35_return_FizzBuzz() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         Integer input = 35;
 
         String result = fizzBuzz.execute(input);
 
         assertEquals("BuzzWhizz", result);
+    }
+
+    @Test
+    public void when_number_contains_7_like_75_return_Fizz() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        Integer input = 75;
+
+        String result = fizzBuzz.execute(input);
+
+        assertEquals("Fizz", result);
     }
 }
