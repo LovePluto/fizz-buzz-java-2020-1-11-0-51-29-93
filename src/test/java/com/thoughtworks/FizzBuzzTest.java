@@ -85,4 +85,24 @@ public class FizzBuzzTest {
 
         assertEquals("FizzBuzzWhizz", result);
     }
+
+    @Test
+    public void when_number_contains_3_like_13_return_Fizz(){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        Integer input = 13;
+
+        String result = fizzBuzz.execute(input);
+
+        assertEquals("Fizz", result);
+    }
+
+    @Test
+    public void when_number_contains_3_like_30_return_Fizz(){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        Integer input = 30;
+
+        String result = fizzBuzz.execute(input);
+
+        assertEquals("Fizz", result);
+    }
 }
