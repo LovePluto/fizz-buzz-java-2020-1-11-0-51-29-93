@@ -8,8 +8,7 @@ public class FizzBuzz {
     private static final String EMPTY_STRING = "";
 
     public String execute(int number) {
-        if (!numberIsContainChar('5', number)
-                && numberIsContainChar('3', number)) {
+        if (isSpecialRule(number)) {
             return FIZZ;
         }
         StringBuilder temp = new StringBuilder();
@@ -22,6 +21,11 @@ public class FizzBuzz {
 
     private boolean stringIsEmpty(String input) {
         return input == null || input.length() == 0;
+    }
+
+    private boolean isSpecialRule(int number) {
+        return !numberIsContainChar('5', number)
+                && numberIsContainChar('3', number);
     }
 
     private boolean numberIsContainChar(char contained, int number) {
