@@ -69,7 +69,7 @@ public class FizzBuzzTest {
     @Test
     public void when_number_is_multiple_of_5_and_7_return_BuzzWhizz(){
         FizzBuzz fizzBuzz = new FizzBuzz();
-        Integer input = 21;
+        Integer input = 35;
 
         String result = fizzBuzz.execute(input);
 
@@ -79,7 +79,7 @@ public class FizzBuzzTest {
     @Test
     public void when_number_is_multiple_of_3_and_5_and_7_return_FizzBuzzWhizz(){
         FizzBuzz fizzBuzz = new FizzBuzz();
-        Integer input = 21;
+        Integer input = 105;
 
         String result = fizzBuzz.execute(input);
 
