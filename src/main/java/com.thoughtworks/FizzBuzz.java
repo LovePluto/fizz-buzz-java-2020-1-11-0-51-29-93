@@ -7,7 +7,8 @@ public class FizzBuzz {
     private static final String WHIZZ = "Whizz";
 
     public String execute(int number) {
-        if (!numberContains5(number) && numberContains3(number)) {
+        if (!numberContainChar('5', number)
+                && numberContainChar('3', number)) {
             return FIZZ;
         }
         String count = "";
@@ -27,13 +28,8 @@ public class FizzBuzz {
         return input == null || input.length() == 0;
     }
 
-    private boolean numberContains3(int number) {
+    private boolean numberContainChar(char contained, int number) {
         String temp = String.valueOf(number);
-        return temp.contains("3");
-    }
-
-    private boolean numberContains5(int number) {
-        String temp = String.valueOf(number);
-        return temp.contains("5");
+        return temp.contains(String.valueOf(contained));
     }
 }

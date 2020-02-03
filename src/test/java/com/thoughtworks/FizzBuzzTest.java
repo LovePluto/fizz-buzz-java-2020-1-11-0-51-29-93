@@ -115,14 +115,4 @@ public class FizzBuzzTest {
 
         assertEquals("BuzzWhizz", result);
     }
-
-    @Test
-    public void when_number_contains_7_like_75_return_Fizz() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
-        Integer input = 75;
-
-        String result = fizzBuzz.execute(input);
-
-        assertEquals("Fizz", result);
-    }
 }
