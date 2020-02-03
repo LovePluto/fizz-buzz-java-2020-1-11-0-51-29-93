@@ -105,4 +105,14 @@ public class FizzBuzzTest {
 
         assertEquals("Fizz", result);
     }
+
+    @Test
+    public void when_number_contains_5_like_35_return_FizzBuzz(){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        Integer input = 35;
+
+        String result = fizzBuzz.execute(input);
+
+        assertEquals("BuzzWhizz", result);
+    }
 }
