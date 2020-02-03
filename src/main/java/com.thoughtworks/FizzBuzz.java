@@ -1,7 +1,7 @@
 package com.thoughtworks;
 
 public class FizzBuzz {
-    public String execute(Integer i) {
-        return null;
+    public String execute(int i) {
+        return String.valueOf(i);
     }
 }
